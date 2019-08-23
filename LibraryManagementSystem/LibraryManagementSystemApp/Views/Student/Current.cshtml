@@ -1,0 +1,88 @@
+﻿@model IEnumerable<LibraryManagementSystem.Model.Model.ViewModel.OrderVM>
+@{
+    ViewBag.Title = "History";
+    Layout = "~/Views/Shared/_LayoutStudent.cshtml";
+}
+
+
+<div style="width:950px; margin-left:50px; margin-top : 50px;" class="panel-group">
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            <div class="panel-title">Current Borrow History</div>
+        </div>
+        <div class="panel-body">
+
+            <table class="table table-striped">
+
+                <tr>
+                    <th>Sl</th>
+                    <th>Book ID</th>
+                    <th>Name</th>
+                    <th>Author Name</th>
+                    <th>Borrow Date</th>
+                    <th>Day For</th>
+                    <th>Return</th>
+                    <th>Return Date</th>
+                    <th>Action</th>
+
+
+                </tr>
+                @{int sl = 0; }
+
+                @{ if (Model != null)
+                    {
+                        foreach (var i in Model)
+                        {
+
+
+                <tr>
+                    <td>@(sl += 1)</td>
+                    <td>@i.bcode</td>
+                    <td>@i.bName</td>
+                    <td>@i.bAuthonerName</td>
+                    <td>@i.oDate.ToShortDateString()</td>
+                    <td>@i.oDayFor.ToString()</td>
+                    @if (i.oIsReturn == 1)
+                    {
+                        <td>Yes</td>
+                    }
+                    else
+                    {
+                        <td>No</td>
+                    }
+                    @if (i.oIsReturn == 1)
+                    {
+                        <td>@i.OReturnDate.ToShortDateString()</td>
+                    }
+                    else
+                    {
+                        <td></td>
+                    }
+
+                    @if (i.oIsReturn == 0)
+                    {
+                        <td><a href="/Book/ReturnBook?id=@i.oID" class="btn btn-danger">Return Book</a></td>
+                    }
+                    else
+                    {
+                        <td></td>
+                    }
+                </tr>
+                        }
+                    }
+
+                }
+                @if (Model.Count() == 0)
+                {
+                <tr>
+                    <td colspan="9" style="text-align:center;"><p>No Current Book Borrow Found..</p></td>
+                </tr>
+                }
+
+            </table>
+        </div>
+    </div>
+
+
+</div>
+

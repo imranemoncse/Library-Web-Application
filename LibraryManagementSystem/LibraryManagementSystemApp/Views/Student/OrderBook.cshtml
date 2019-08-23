@@ -1,0 +1,78 @@
+﻿@model LibraryManagementSystem.Model.Model.ViewModel.OrderVM
+
+@{
+    ViewBag.Title = "Order Book";
+    Layout = "~/Views/Shared/_LayoutStudent.cshtml";
+}
+
+<div style="width:650px; margin-left:250px; margin-top:50px;" class="panel-group">
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            <div class="panel-title">Confirm Borrow Book</div>
+        </div>
+        <div class="panel-body">
+
+            <div>
+                <div class="form-group row">
+                    @if (ViewBag.FMsg != null)
+                    {
+                        <p style="color: red;  margin-left:10px; font-weight: bolder">@(ViewBag.FMsg)</p>
+                    }
+
+
+                </div>
+                <hr />
+                <dl class="dl-horizontal">
+
+
+                    <dt>
+                        @Html.DisplayName("Book ID")
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.bcode)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayName("Book Name")
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.bName)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayName("Authoner Name")
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.bAuthonerName)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayName("Day For Borrow")
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.oDayFor)
+                    </dd>
+
+
+                </dl>
+            </div>
+            <p>
+
+                @if (ViewBag.FMsg == null)
+                {
+                @Html.ActionLink("Borrow Now", "BorrowNow", "Student", new { studentID = Model.sID, BookID = Model.bID }, new { @class = "btn btn-success" })
+                }
+
+                @Html.ActionLink("Back", "Borrow", "Book",null, new { @class = "btn btn-primary" })
+                
+            </p>
+            </div>
+    </div>
+
+
+</div>
+

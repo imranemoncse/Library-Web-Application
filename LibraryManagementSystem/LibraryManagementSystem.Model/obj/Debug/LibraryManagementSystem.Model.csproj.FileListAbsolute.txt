@@ -1,0 +1,6 @@
+F:\BITM\Rana_Project\LibraryManagementSystem\LibraryManagementSystem.Model\bin\Debug\LibraryManagementSystem.Model.dll
+F:\BITM\Rana_Project\LibraryManagementSystem\LibraryManagementSystem.Model\bin\Debug\LibraryManagementSystem.Model.pdb
+F:\BITM\Rana_Project\LibraryManagementSystem\LibraryManagementSystem.Model\obj\Debug\LibraryManagementSystem.Model.csprojAssemblyReference.cache
+F:\BITM\Rana_Project\LibraryManagementSystem\LibraryManagementSystem.Model\obj\Debug\LibraryManagementSystem.Model.csproj.CoreCompileInputs.cache
+F:\BITM\Rana_Project\LibraryManagementSystem\LibraryManagementSystem.Model\obj\Debug\LibraryManagementSystem.Model.dll
+F:\BITM\Rana_Project\LibraryManagementSystem\LibraryManagementSystem.Model\obj\Debug\LibraryManagementSystem.Model.pdb

@@ -1,0 +1,17 @@
+F:\BITM\Rana_Project\LibraryManagementSystem\LibraryManagementSystem.DAL\bin\Debug\LibraryManagementSystem.DAL.dll.config
+F:\BITM\Rana_Project\LibraryManagementSystem\LibraryManagementSystem.DAL\bin\Debug\LibraryManagementSystem.DAL.dll
+F:\BITM\Rana_Project\LibraryManagementSystem\LibraryManagementSystem.DAL\bin\Debug\LibraryManagementSystem.DAL.pdb
+F:\BITM\Rana_Project\LibraryManagementSystem\LibraryManagementSystem.DAL\bin\Debug\EntityFramework.dll
+F:\BITM\Rana_Project\LibraryManagementSystem\LibraryManagementSystem.DAL\bin\Debug\EntityFramework.SqlServer.dll
+F:\BITM\Rana_Project\LibraryManagementSystem\LibraryManagementSystem.DAL\bin\Debug\EntityFramework.xml
+F:\BITM\Rana_Project\LibraryManagementSystem\LibraryManagementSystem.DAL\bin\Debug\EntityFramework.SqlServer.xml
+F:\BITM\Rana_Project\LibraryManagementSystem\LibraryManagementSystem.DAL\obj\Debug\LibraryManagementSystem.DAL.csprojAssemblyReference.cache
+F:\BITM\Rana_Project\LibraryManagementSystem\LibraryManagementSystem.DAL\obj\Debug\LibraryManagementSystem.DAL.csproj.CoreCompileInputs.cache
+F:\BITM\Rana_Project\LibraryManagementSystem\LibraryManagementSystem.DAL\obj\Debug\LibraryManagementSystem.DAL.csproj.CopyComplete
+F:\BITM\Rana_Project\LibraryManagementSystem\LibraryManagementSystem.DAL\obj\Debug\LibraryManagementSystem.DAL.dll
+F:\BITM\Rana_Project\LibraryManagementSystem\LibraryManagementSystem.DAL\obj\Debug\LibraryManagementSystem.DAL.pdb
+F:\BITM\Rana_Project\LibraryManagementSystem\LibraryManagementSystem.DAL\bin\Debug\LibraryManagementSystem.DatabaseContext.dll
+F:\BITM\Rana_Project\LibraryManagementSystem\LibraryManagementSystem.DAL\bin\Debug\LibraryManagementSystem.Model.dll
+F:\BITM\Rana_Project\LibraryManagementSystem\LibraryManagementSystem.DAL\bin\Debug\LibraryManagementSystem.DatabaseContext.pdb
+F:\BITM\Rana_Project\LibraryManagementSystem\LibraryManagementSystem.DAL\bin\Debug\LibraryManagementSystem.DatabaseContext.dll.config
+F:\BITM\Rana_Project\LibraryManagementSystem\LibraryManagementSystem.DAL\bin\Debug\LibraryManagementSystem.Model.pdb

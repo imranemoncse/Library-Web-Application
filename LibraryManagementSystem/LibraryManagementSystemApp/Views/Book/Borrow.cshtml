@@ -1,0 +1,115 @@
+﻿@model IEnumerable<LibraryManagementSystem.Model.Model.Book>
+@{
+    ViewBag.Title = "Borrow";
+    Layout = "~/Views/Shared/_LayoutStudent.cshtml";
+}
+
+
+<div style="width:950px; margin-left:50px; margin-top : 50px;" class="panel-group">
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            <div class="panel-title">Borrow Book</div>
+        </div>
+        <div class="panel-body">
+            <div class="row" style="margin-left:5%">
+                <form method="post">
+                    <div class="form-group row">
+                        <div class="col">
+                            <div class="col-md-2">
+                                @Html.Label("Search", "Search *", new { @class = "" })
+                            </div>
+                            <div class="col-md-4">
+                                @if (ViewBag.Search != null)
+                                {
+                                    <input class="form-control" type="text" name="Name" value="@ViewBag.Search" />
+                                }
+                                else
+                                {
+                                    <input class="form-control" type="text" name="Name" value="" />
+                                }
+                            </div>
+                            <div class="col-md-2">
+                                <input type="submit" class="btn btn-success" value="Search" />
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-group row">
+                @if (ViewBag.FMsg != null)
+                {
+                    <p style="color: red;  margin-left:10px; font-weight: bolder">@(ViewBag.FMsg)</p>
+                }
+
+
+            </div>
+
+            <table class="table table-striped" id="tblBorrow">
+
+                <tr>
+                    <th>Sl</th>
+                    <th>Book ID</th>
+                    <th>Name</th>
+                    <th>Author Name</th>
+                    <th>Avalable Quantity</th>
+                    <th>Photo</th>
+                    <th>Action</th>
+
+                </tr>
+                @{int sl = 0; }
+                @foreach (var i in Model)
+                {
+
+
+
+                    <tr>
+                        <td>@(sl += 1)</td>
+                        <td>@i.Code</td>
+                        <td>@i.Name</td>
+                        <td>@i.AuthorName</td>
+                        <td>@i.Quantity</td>
+                        <td>
+
+                            @if (i.Data != null)
+                            {
+                                var base64 = Convert.ToBase64String(i.Data);
+                                var imgsrc = string.Format("data:image/png;base64,{0}", base64);
+                                <img src='@imgsrc' style="max-width:50px;max-height:50px;" />
+                            }
+
+
+                        </td>
+                        @if (i.Quantity > 0)
+                        {
+                            <td><a href="/Student/OrderBook?id=@i.ID" class="btn btn-primary" name="Name">Borrow Book</a></td>
+                        }
+                        else
+                        {
+                            <td></td>
+                        }
+
+                    </tr>
+                }
+                @if (Model.Count() == 0)
+                {
+                    <tr>
+                        <td colspan="7" style="text-align:center;"><p>No Book Found..</p></td>
+                    </tr>
+                }
+
+
+
+            </table>
+        </div>
+    </div>
+
+
+</div>
+
+
+
